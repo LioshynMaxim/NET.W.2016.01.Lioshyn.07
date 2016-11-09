@@ -31,9 +31,10 @@ namespace Task1.Tests
         [TestCase()]
         public void BubbleSortAlgorithmTest()
         {
-            BubbleSortAlgorithm<int>(ref ArrForFirstTest, new BubbleSort(), 1);
+            BubbleSortAlgorithm(ArrForFirstTest, new SumUp());
             Assert.AreEqual(ArrForFirstTest, ArrNewInts);
         }
        
+
     }
 }
