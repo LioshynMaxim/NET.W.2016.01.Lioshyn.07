@@ -6,6 +6,12 @@ namespace Task1
 {
     public interface ICompare
     {
+        /// <summary>
+        /// Interface function for Bubble sort
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>Changes arrays</returns>
         int Compare(int[] array1, int[] array2);
     }
 
@@ -53,9 +59,16 @@ namespace Task1
             b = a;
             a = temp;
         }
-        
+
 
         #endregion
+
+        /// <summary>
+        /// Default function for Bubble sort
+        /// </summary>
+        /// <param name="x">First sz array</param>
+        /// <param name="y">Second sz array</param>
+        /// <returns>throw new NotImplementedException()</returns>
 
         public int Compare(int[] x, int[] y)
         {
@@ -65,6 +78,14 @@ namespace Task1
 
     public class SumUp : IComparer<int[]>
     {
+
+        /// <summary>
+        /// Sort the array in ascending amounts of rows
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the sums of the rows of arrays</returns>
+
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
@@ -77,6 +98,13 @@ namespace Task1
 
     public class SumDown : IComparer<int[]>
     {
+        /// <summary>
+        /// Sorting an array of descending amounts lines
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the sums of the rows of arrays</returns>
+
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
@@ -89,6 +117,12 @@ namespace Task1
 
     public class MaxUp : IComparer<int[]>
     {
+        /// <summary>
+        /// Sort the array in ascending max elements in rows
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the max elements in row</returns>
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
@@ -101,6 +135,12 @@ namespace Task1
 
     public class MaxDown : IComparer<int[]>
     {
+        /// <summary>
+        /// Sort the array in descending max elements in rows
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the max elements in row</returns>
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
@@ -113,6 +153,12 @@ namespace Task1
 
     public class MinUp : IComparer<int[]>
     {
+        /// <summary>
+        /// Sort the array in ascending min elements in rows
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the min elements in row</returns>
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
@@ -125,6 +171,12 @@ namespace Task1
 
     public class MinDown : IComparer<int[]>
     {
+        /// <summary>
+        /// Sort the array in descending min elements in rows
+        /// </summary>
+        /// <param name="array1">First sz array</param>
+        /// <param name="array2">Second sz array</param>
+        /// <returns>The difference between the min elements in row</returns>
         public int Compare(int[] array1, int[] array2)
         {
             if (ReferenceEquals(array1, null))
