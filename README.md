@@ -1,12 +1,7 @@
 # NET.W.2016.01.Lioshyn.07
 
-For the Customer object class, which has a string properties Name, ContactPhone and Revenue decimal type property, the ability to implement a string representation of various kinds.
-For example, for an object with the values of Name = "Jeffrey Richter", Revenue = 1000000, ContactPhone = "+1 (425) 555-0100" can have the following options:
+Refactoring. Implement the algorithm of "bubble" sort-rectangular integer array (System.Array class sorting methods did not use) so as to be able to order the rows:
 
-* Customer record: Jeffrey Richter, 1,000,000.00, +1 (425) 555-0100
-* Customer record: +1 (425) 555-0100
-* Customer record: Jeffrey Richter, 1,000,000.00
-* Customer record: Jeffrey Richter
-* Customer record: 1000000, etc.
-
-Without changing the Customer class, adding to objects of this class additional ability to format not provided for the class. Develop unit tests.
+* in ascending order (descending) of amounts of elements rows of the matrix;
+* in ascending order (descending) of maximal elements of the rows of the matrix;
+* in ascending order (descending) of minimal elements of matrix rows.
